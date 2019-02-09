@@ -4,3 +4,4 @@ Boilerplate
 - redux (w/ redux-devtools)
 - reselect
 - typesafe-actions
+- tailwindcss
