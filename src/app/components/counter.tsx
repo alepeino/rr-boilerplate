@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { State } from '../../store/clientReducers';
+import { State } from '../../store/client';
 import { decrement, increment } from '../../store/features/counter';
 import { value } from '../../store/selectors';
 
