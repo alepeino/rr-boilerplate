@@ -1,6 +1,7 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
+import { sendToSocketEpic }from './epics/socket';
 import { CounterState, reducer as counter } from './features/counter';
 
 const reducers = combineReducers({
@@ -8,6 +9,7 @@ const reducers = combineReducers({
 });
 
 const epics = combineEpics<any, any, State>(
+  sendToSocketEpic
 );
 
 export interface State {
