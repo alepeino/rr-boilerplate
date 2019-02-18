@@ -7,9 +7,9 @@ import { value } from '../../store/selectors';
 
 const Counter: React.FunctionComponent<StateProps & DispatchProps> = ({ value, increment, decrement }) => (
   <div>
-    <button onClick={decrement}>-</button>
+    <button onClick={() => decrement()}>-</button>
     <span>{value}</span>
-    <button onClick={increment}>+</button>
+    <button onClick={() => increment()}>+</button>
   </div>
 );
 
